@@ -63,14 +63,15 @@ On a **non rooted phone** you may consider using https://www.freemyband.com/ or 
     Ubuntu:
     sudo apt-get install libglib2.0-dev
     pip3 install -r requirements.txt
-    ```
+    
     Fedora:
     sudo dnf install python-pip glib2-devel
     pip3 install -r requirements.txt
     
+    ```
     
 2. (**Optional**) Find AuthKey for your device and put it to `auth_key.txt` file in the current directory with the script. 
-	 ->[Logging in with Xiaomi account] (https://github.com/argrento/huami-token)
+	 ->[Logging in with Xiaomi account](https://github.com/argrento/huami-token)
 
 3.  Turn off your Bluetooth on your mobile device paired with MIBand 4
 
