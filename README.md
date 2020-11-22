@@ -21,6 +21,9 @@ MiBand 4 with updated firmware requires server based pairing. This means, that y
 There are several ways to obtain the key.
 
 #### Obtaining unique Authkey
+
+On a **non rooted phone** you may consider using [Logging in with Xiaomi account](https://github.com/argrento/huami-token) or https://www.freemyband.com/ 
+
 On **rooted phone** you may grab the key from MiFit database which means that you must:
 
 - install MiFit
@@ -30,7 +33,6 @@ On **rooted phone** you may grab the key from MiFit database which means that yo
 ```
 sqlite3 /data/data/com.xiaomi.hm.health/databases/origin_db_[YOURDBNAMEHERE] "select AUTHKEY from DEVICE"
 ```
-On a **non rooted phone** you may consider using https://www.freemyband.com/ or [Logging in with Xiaomi account](https://github.com/argrento/huami-token)
 
 **NOTICE**: Every time you hard reset the band/watch, the Bluetooth MAC Address will be changed and you must grab a new key! Also, anytime you unpair your band/watch from MiFit, the pairing key will be invalidated and you must make new pairing in MiFit app.
 
@@ -53,9 +55,10 @@ On a **non rooted phone** you may consider using https://www.freemyband.com/ or 
 # Setup and demo
 
 
-- Clone this repo to your local machine using `https://github.com/Gaspared/miband4.git`
-
-
+- Clone this repo to your local machine using 
+ ```
+ `git clone https://github.com/Gaspared/miband4.git`
+  ```
 
 1.  Install the dependencies. Libglib2 is required for bluepy. 
 
@@ -87,14 +90,6 @@ On a **non rooted phone** you may consider using https://www.freemyband.com/ or 
     ```
     python3 miband4_console.py -m MAC_ADDRESS 
 	```
-
-
-
-## TODO
-- Setting Alarm
-
-
-
 
 
 ## Contributing
