@@ -9,10 +9,6 @@
 > Only works on linux.
 ![demo](screen/1.png)
 
-## Updates(10/27/2020)
-- (New Feature) Custom watchface files(.bin) support. 
-- Firmware restore/update fixes.
-
 ## Contributors 
 
  MiBand 4 provides superset of services provided by MiBand 2/3. For the services that were similar for both devices, the bluetooth characteristics, UUIDs  and request/response byte sequence were the same. Therefore,  I utilized some of the informations already uncovered by [Freeyourgadget team](https://github.com/Freeyourgadget/Gadgetbridge) and made use of the code by [Andrey Nikishaev](https://github.com/creotiv) for MiBand2. I reverse engineered snooped ACL packets to fill in the pieces of the puzzle. 
@@ -34,7 +30,7 @@ On **rooted phone** you may grab the key from MiFit database which means that yo
 ```
 sqlite3 /data/data/com.xiaomi.hm.health/databases/origin_db_[YOURDBNAMEHERE] "select AUTHKEY from DEVICE"
 ```
-On a **non rooted phone** you may consider using https://www.freemyband.com/ 
+On a **non rooted phone** you may consider using https://www.freemyband.com/ or [Logging in with Xiaomi account](https://github.com/argrento/huami-token)
 
 **NOTICE**: Every time you hard reset the band/watch, the Bluetooth MAC Address will be changed and you must grab a new key! Also, anytime you unpair your band/watch from MiFit, the pairing key will be invalidated and you must make new pairing in MiFit app.
 
@@ -57,17 +53,24 @@ On a **non rooted phone** you may consider using https://www.freemyband.com/
 # Setup and demo
 
 
-- Clone this repo to your local machine using `https://github.com/satcar77/miband4.git`
+- Clone this repo to your local machine using `https://github.com/Gaspared/miband4.git`
 
 
 
 1.  Install the dependencies. Libglib2 is required for bluepy. 
 
     ```
+    Ubuntu:
     sudo apt-get install libglib2.0-dev
     pip3 install -r requirements.txt
     ```
+    Fedora:
+    sudo dnf install python-pip glib2-devel
+    pip3 install -r requirements.txt
+    
+    
 2. (**Optional**) Find AuthKey for your device and put it to `auth_key.txt` file in the current directory with the script. 
+	 ->[Logging in with Xiaomi account] (https://github.com/argrento/huami-token)
 
 3.  Turn off your Bluetooth on your mobile device paired with MIBand 4
 
