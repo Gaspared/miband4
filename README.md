@@ -55,7 +55,7 @@ sqlite3 /data/data/com.xiaomi.hm.health/databases/origin_db_[YOURDBNAMEHERE] "se
 
 - Clone this repo to your local machine using 
  ```
- `git clone https://github.com/Gaspared/miband4.git`
+ git clone https://github.com/Gaspared/miband4.git
   ```
 
 1.  Install the dependencies. Libglib2 is required for bluepy. 
@@ -72,7 +72,7 @@ sqlite3 /data/data/com.xiaomi.hm.health/databases/origin_db_[YOURDBNAMEHERE] "se
     ```
     
 2. (**Optional**) Find AuthKey for your device and put it to `auth_key.txt` file in the current directory with the script. 
-	 ->[Logging in with Xiaomi account](https://github.com/argrento/huami-token)
+	[Logging in with Xiaomi account](https://github.com/argrento/huami-token)
 
 3.  Turn off your Bluetooth on your mobile device paired with MIBand 4
 
@@ -88,27 +88,6 @@ sqlite3 /data/data/com.xiaomi.hm.health/databases/origin_db_[YOURDBNAMEHERE] "se
     ```
     python3 miband4_console.py -m MAC_ADDRESS 
 	```
-
-
-## Contributing
-
-
-
-#### Step 1
-
-- **Option 1**
-    - 🍴 Fork this repo!
-
-- **Option 2**
-    - 👯 Clone this repo to your local machine
-
-#### Step 2
-
-- **HACK AWAY!** 🔨🔨🔨
-
-#### Step 3
-
-- 🔃 Create a new pull request
 
 
 
