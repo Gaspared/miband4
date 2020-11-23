@@ -89,5 +89,14 @@ sqlite3 /data/data/com.xiaomi.hm.health/databases/origin_db_[YOURDBNAMEHERE] "se
     python3 miband4_console.py -m MAC_ADDRESS 
 	```
 
+# Check the Youtube Tutorial
+
+## https://www.youtube.com/watch?v=e-2QMhUvCGw
+
+
+![MI Band](thumb.jpg)
+
+
+
 
 
